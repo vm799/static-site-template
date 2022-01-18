@@ -1,18 +1,68 @@
 .header {
-
-    &__logo{
+    nav {
+        padding:17px 24px;
         
-img{
-
-}
     }
-
-    &__menu{
-        > span{
-            display: block;
-            width:26px;
-            height:2px;
-            background-color: darkblue;
+        &__logo{
+    width: 4.8125rem;
+    height:1.575rem;
+   
         }
-    }
-}
+    
+        &__menu{
+            > span{
+                display: block;
+                width:26px;
+                height:2px;
+                background-color: darkblue;
+
+                &:not(:last-child){
+                    margin-bottom: 3px;
+                }
+            }
+        }
+        &__links {
+
+            a{
+                position:relative;
+                height:26px;
+                font-size: $font-sm;
+                color:$greyishBlue;
+                transition: color 300ms ease-in-out;
+
+            &:not(:last-child){
+                margin-right: 36px;
+                }
+
+            &::before{
+                content:"";
+                display: block;
+                position:absolute;
+                height:2px;
+                background: linear-gradient(to right, $jade, $brightCyan);
+                right:0;
+                left:0;
+                bottom: -30px;
+                opacity:0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover {
+                color:$darkTeal;
+                &::before{
+                   opacity:1
+                }
+            }
+     }
+   }
+   &__cta {
+       font-size:$font-sm;
+       color:$offWhite;
+       transition: opacity 300ms ease-in-out;
+       
+       &:hover{
+           opacity:0.55;
+           font-weight: bold;
+       }
+   }
+ }
