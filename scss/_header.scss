@@ -1,16 +1,51 @@
 .header {
-    nav {
-        padding:17px 24px;
+position:relative;
+z-index:1;
+
+     // Hamburger open styles
+&.open {
+
+    .overlay{
+        display:block;
         
     }
-        &__logo{
-    img {
+    .header__toggle {
+        > span:first-child{
+            transform:rotate(45deg);
+                }
+        > span:nth-child(2){
+            opacity:0;
+                }
+        > span:last-child{
+                    transform:rotate(-45deg);
+                                    }
+            }
+    }
+
+.overlay {
+opacity:0;
+position:fixed;
+top:69px;
+bottom:0;
+right:0;
+left:0;
+background-image:linear-gradient( $darkTeal,  transparent);
+
+
+
+}
+nav {
+        padding:17px 24px;
+        position: relative;
+}
+    &__logo{
+        img {
         width: 4.8125rem;
         height:1.575rem;
     }
     }
     
-        &__menu{
+        &__toggle{
             > span{
                 display: block;
                 width:26px;
@@ -23,19 +58,9 @@ transform-origin: 5.5px 1px;
                     margin-bottom: 3px;
                 }
             }
-            &.open {
-                > span:first-child{
-transform:rotate(45deg);
-                }
-                > span:nth-child(2){
-opacity:0;
-                }
-                > span:last-child{
-                    transform:rotate(-45deg);
-                                    }
-            }
+            
         }
-        &__links {
+        &__menu{
 
             a{
                 position:relative;
@@ -63,20 +88,25 @@ opacity:0;
 
             &:hover {
                 color:$darkTeal;
+
                 &::before{
                    opacity:1
                 }
             }
+        }
      }
    }
-   &__cta {
-       font-size:$font-sm;
-       color:$offWhite;
-       transition: opacity 300ms ease-in-out;
+
+//    &__cta {
+//        font-size:$font-sm;
+//        color:$offWhite;
+//        transition: opacity 300ms ease-in-out;
        
-       &:hover{
-           opacity:0.55;
-           font-weight: bold;
-       }
-   }
- }
+//        &:hover{
+//            opacity:0.55;
+//            font-weight: bold;
+//        }
+//    }
+ 
+//  }
+// }
