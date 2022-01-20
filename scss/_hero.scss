@@ -1,0 +1,46 @@
+.hero{
+    &__image{
+        border: 2px solid hotpink;
+        position:relative;
+        background-image: url("https://image.freepik.com/free-vector/gradient-geometric-background_23-2148809183.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height:17.5rem;
+       
+
+        &::before{
+            content:"";
+            position:absolute;
+            background-image:url("/kisspng-mockup-user-interface-design-mobile-app-mobile-pho-5ce7d8829a5168.2382125115586981146321.png");
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: 94%;
+            height:100%;
+            width:100%;
+            z-index: 1;
+        }
+    }
+
+    &__text{
+            text-align:center;
+        h1{
+            font-weight:300px;
+            font-size: 1.875rem;
+            line-height: 1.15;
+        }
+
+        p{
+            line-height: 1.35;
+            padding-bottom: 1.25rem;
+        }
+
+    }
+
+    &__cta {
+        font-size:$font-sm;
+        color:$offWhite;
+        transition: opacity 300ms ease-in-out;
+    }
+
+}
