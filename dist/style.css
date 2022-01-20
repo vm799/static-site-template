@@ -56,6 +56,9 @@ body {
   color: #b0c4de;
   font-weight: 300;
 }
+body.noScroll {
+  overflow: hidden;
+}
 
 a, a:visited, a:hover {
   text-decoration: none;
