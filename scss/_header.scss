@@ -1,6 +1,6 @@
 .header {
 position:relative;
-z-index:1;
+z-index:10;
 
      // Hamburger open styles
 &.open {
@@ -24,21 +24,23 @@ bottom:0;
 right:0;
 left:0;
 background-image: linear-gradient( transparent, $brightCyan );
+
 }
 
 nav {
        padding-top: 0.1625rem;
        padding-bottom: 0.1625rem;
-
-       
+width:100%;
+      
         position: relative;
-        background-color: rgb(249, 244, 244);
+       
 }
-&__logo{
-    img {
-        width: 6.8125rem;
-        height:3.575rem;
-    }
+h3{
+    
+        // width: 6.8125rem;
+        // height:3.575rem;
+        color:$darkTeal;
+    
     }
     
 &__toggle{ 
