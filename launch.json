@@ -1,11 +1,11 @@
 {
     "version": "0.2.0",
     "configurations": [
-        "Node.js: Launch via npm"
-        "JavaScript Debug Terminal"
-        "Launch Chrome to debug a URL"
-        "npm start"
-        "#/definitions/chrome:launch"
+        "Node.js: Launch via npm",
+        "JavaScript Debug Terminal",
+        "Launch Chrome to debug a URL",
+        "npm start",
+        "#/definitions/chrome:launch",
         {
             "name": "Chrome",
             "type": "chrome",
