@@ -60,8 +60,12 @@ body.noScroll {
   overflow: hidden;
 }
 
-h1, h2, h3, p {
+h1, h2, h3 {
   margin-top: 0;
+  font-weight: 300;
+  font-size: 2.3rem;
+  line-height: 1.15;
+  color: #264348;
 }
 
 @media (min-width: 64em) {
@@ -72,6 +76,13 @@ h1, h2, h3, p {
 
 h2 {
   font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+}
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
 }
 
 a, a:visited, a:hover {
@@ -244,7 +255,7 @@ button:hover, .button:hover {
 
 .hero {
   height: 60%;
-  
+  border: 5px solid hotpink;
 }
 @media (min-width: 64em) {
   .hero .hero-container {
@@ -297,7 +308,6 @@ button:hover, .button:hover {
   width: 80%;
   top: 1em;
   right: 1em;
-
 }
 @media (min-width: 40em) {
   .hero__image::after {
@@ -358,7 +368,6 @@ button:hover, .button:hover {
   }
 }
 .feature__item {
-  border: 5px solid red;
   padding: 0.9375rem;
 }
 @media (min-width: 64em) {

@@ -1,6 +1,7 @@
 .hero{
 height: 60%;
-    
+     border: 5px solid hotpink;
+     
 .hero-container{
     @include breakpoint-up(large){
         display:flex;
@@ -41,7 +42,7 @@ height: 60%;
                 width: 115%;
                 height: 120%;
                 top:-4em;
-                // border:5px solid hotpink;
+                
             }
         }
         
@@ -56,7 +57,7 @@ height: 60%;
             width: 80%;
             top: 1em;
             right:1em;
-           border: 5px solid hotpink;
+          
            
         @include breakpoint-up(medium){
             background-size: 60%;
