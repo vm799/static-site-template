@@ -55,6 +55,7 @@ body {
   font-size: 1.125rem;
   color: #264348;
   font-weight: 300;
+
 }
 body.noScroll {
   overflow: hidden;
@@ -216,8 +217,8 @@ button:hover, .button:hover {
 .header__links a {
   position: relative;
   height: 26px;
-  font-size: 0.75rem;
-  color: #b0c4de;
+  font-size: 1.05rem;
+  color: teal;
   transition: color 300ms ease-in-out;
 }
 .header__links a:not(:last-child) {

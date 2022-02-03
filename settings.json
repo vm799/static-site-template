@@ -2,7 +2,7 @@
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "/dist",
+      "savePath": "css",
       "savePathSegmentKeys": null,
       "savePathReplaceSegmentsWith": null
     }

@@ -3,7 +3,7 @@ html{
     box-sizing: border-box;
 }
 
-*, *::after,*::before{
+*,  *::after, *::before{
     box-sizing: inherit;
 }
 
@@ -13,8 +13,9 @@ body{
     font-family: 'Public Sans', sans-serif;
     line-height:1.3;
     font-size:$font-med;
-    color:$darkTeal;
+    color: $darkTeal;
     font-weight: 300;
+    
    
  &.noScroll{
     overflow:hidden;
