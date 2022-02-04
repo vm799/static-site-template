@@ -55,7 +55,7 @@ body {
   font-size: 1.125rem;
   color: #264348;
   font-weight: 300;
-
+  
 }
 body.noScroll {
   overflow: hidden;
